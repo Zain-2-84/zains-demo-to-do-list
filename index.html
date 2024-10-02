@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+    <!-- style.css -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- container start -->
+    <div class="container">
+      <!-- header-section start -->
+      <!-- <div id="myDIV" class="header"> -->
+      <div class="header-section" id="myDIV">
+        <h2 class="header" style="margin: 5px">My To Do List</h2>
+        <input
+          type="text"
+          id="myInput"
+          class="myInput"
+          placeholder="Add your task here."
+        />
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+      <!-- header-section end -->
+
+      <!-- items-list-section start -->
+      <div class="items-list-section">
+        <ul class="items-list" id="myUL">
+          <li class="item">Hit the gym</li>
+          <li class="item checked">Pay bills</li>
+          <li class="item">Meet George</li>
+          <li class="item">Buy eggs</li>
+          <li class="item">Read a book</li>
+          <li class="item">Organize office</li>
+        </ul>
+      </div>
+      <!-- items-list-section end -->
+    </div>
+    <!-- container end -->
+
+    <!-- app.js -->
+    <script src="./app.js"></script>
+  </body>
+</html>
